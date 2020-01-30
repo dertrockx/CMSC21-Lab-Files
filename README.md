@@ -2,4 +2,4 @@
 
 * this repository holds files that were created while attending class.
 * Each class session has a different folder with date as its name
-* For project, there's a seperate line for it
+* For project, there's a seperate folder for it
