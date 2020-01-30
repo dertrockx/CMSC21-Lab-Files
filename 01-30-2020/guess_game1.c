@@ -12,7 +12,7 @@
 int main () {
 
 	int choice;
-	int tries;
+	int tries = 0;
 	int rand_num, guess_num;
 	//the entire game is one BIG LOOP
 	
@@ -28,14 +28,16 @@ int main () {
 	
 		switch ( choice ) {
 			//play the game
-			case 1: srand(time(NULL));   //statistics mumbo-jumbo
+			case 1: 
+                    srand(time(NULL));   //statistics mumbo-jumbo
 					rand_num = rand() % 100 + 1;  /*randomizes a number between 1 - 100*/
 					printf("\n\tComputer: I'm thinking of a number between 1 - 100\n"); 
 					//the game is a loop till you get the number
 					do {
 						tries++;    /*starts counting attempts*/
 						printf("\tEnter your guess: ");
-						scanf("%i", &guess_num);
+						scanf("%d", &guess_num);
+						printf("%d\n", guess_num);
 						if ( guess_num < rand_num ) 
 							printf("\tHigher!! Guess again!\n");
 						else if ( guess_num > rand_num )
@@ -63,3 +65,4 @@ int main () {
 	}while( choice != 3 ); /*quit the game*/
 	
 }/* end of program*/
+
