@@ -1,4 +1,4 @@
-# CMSC22 Lab Files
+# CMSC21 Lab Files
 
 * this repository holds files that were created while attending class.
 * Each class session has a different folder with date as its name
